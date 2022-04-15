@@ -5,9 +5,9 @@ import sys
 
 
 def countpatterninfile():
-    regular_expression = input("Enter a regular expression: ")
+    regular_expression = (input("Enter a regular expression: "))
     count = 0
-    fileName = input("Please enter a file name: ")
+    fileName = "mbox-long.txt"
     f = open(fileName,"r")
     for line in f:
         line = line.rstrip()
