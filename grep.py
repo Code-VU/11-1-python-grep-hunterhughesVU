@@ -10,7 +10,6 @@ def countpatterninfile():
     fileName = "mbox-long.txt"
     f = open(fileName,"r")
     for line in f:
-        line = line.rstrip()
         if(re.search(regular_expression,line)):
             count += 1
 
