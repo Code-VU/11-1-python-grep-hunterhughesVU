@@ -5,24 +5,16 @@ import sys
 
 
 def countpatterninfile():
-    regular_expression = str(input("Enter a regular expression: "))
+    regular_expression = input("Enter a regular expression: ")
     count = 0
     fileName = "mbox-long.txt"
     f = open(fileName,"r")
     for line in f:
         line = line.rstrip()
-        #print(line)
         if(re.search(regular_expression,line)):
             count += 1
-            
+
     print(fileName,"had",count,"lines that matched",regular_expression)
-
-
-
-
-
-
-    
 
 
 if __name__ == '__main__':
