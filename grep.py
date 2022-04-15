@@ -14,7 +14,7 @@ def countpatterninfile():
         if(re.search(regular_expression,line)):
             count += 1
 
-    print(fileName,"had",count,"lines that matched",regular_expression)
+    print("mbox.txt had",count,"lines that matched",regular_expression)
 
 
 if __name__ == '__main__':
